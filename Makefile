@@ -1,6 +1,8 @@
 CC	= gcc
 TARGET := callisto
 
+target_link_libraries(callisto SDL2main SDL2)
+
 CFILES := $(shell find src/ -name '*.c')
 OBJS	= $(addsuffix .o, $(basename $(CFILES)))
 
